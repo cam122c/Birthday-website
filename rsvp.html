@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+	Author: Cameron Robinson
+	Date:   01/21/2021
+	Assignment 5
+
+	Filename: index.html
+	-->
+	 <meta charset="utf-8" />
+   <title>Robinson: Assignment 5</title>
+   <link href="Robinson_styles.css" rel="stylesheet">
+   <script src="Robinson_script.js"></script>
+</head>
+
+<body>
+  <header >
+     <img src="Robinson_logo.png" alt="Robinson pictures">
+	  <h1> 03/08/2000</h1>
+  </header>
+  <nav>  
+  <a href="index.html" >Homepage</a>
+  <a href="activities.html" >Activities</a>
+  <a href="wishlist.html" >Wishlist</a>
+  <a href="rsvp.html">RSVP</a>
+  <a href="index.html#FamousBirthdays">Famous Birthdays </a>
+  </nav>
+   <main>
+  <h2> RSVP to Party </h2>
+  
+  <form action="formProcessor.html" method="GET" id="orderForm">
+  <fieldset>
+  <legend> Contact Information</legend>
+  <label for="custFname">Name</label>
+  <input type="text" id="custFname" name="firstName">
+  
+  <label for="custFemail">Email</label>
+  <input type="email" id="custFemail" name="Email">
+  
+  <label for="custFphone">Phone</label>
+  <input type="tel" id="custFphone" name="phone">
+  
+  <label for="custFage">Age</label>
+  <input type="number" id="custFage" name="age" min="1" max="99">
+  
+  <label for="custFbirthday">Birthday</label>
+  <input type="date" id="custFbirthday" name="birthday">
+  
+  <label for="FavoritePartyGame">Fav Party Game</label>
+  <select id="FavoritePartyGame" name="Partygame">
+	  <option value="">&nbsp;</option>
+	  <option value="Beer Pong">Beer Pong</option>
+	  <option value="UNO">UNO</option>
+	  <option value="Madden 21">Madden 21</option>
+	  <option value="2k">2k</option>
+	  <option value="UFC 4">UFC 4</option>
+  </select>  
+  </fieldset>
+  
+  <fieldset>
+  <legend> Party Food Information</legend>
+   <div id="Food">
+  <p> Choice of Entree</p>
+		<input name="Food" id="ccSteak" type="radio" value="Steak">
+		<label for="ccSteak"> Steak</label>
+		<input name="Food" id="ccSalmon" type="radio" value="Salmon">
+		<label for="ccSalmon"> Salmon</label>
+		<br>
+		<input name="Food" id="ccOxtails" type="radio" value="Oxtails">
+		<label for="ccOxtails"> Oxtails</label>
+		<input name="Food" id="ccLambChops" type="radio" value="LambChops">
+		<label for="ccLambChops"> Lamb Chops</label>
+		</div>
+		<p> Snack Options</p>
+		<div id="Snack">
+		<input name="Snack" id="Hotcheetos" type="checkbox" value="Hotcheetos">
+		<label for="Hotcheetos"> Hot cheetos</label>
+		<input name="Snack" id="Popcorn" type="checkbox" value="Popcorn">
+		<label for="Popcorn"> Popcorn</label>
+		<br>
+		<input name="Snack" id="Cheeze-It" type="checkbox" value="Cheeze-It">
+		<label for="Cheeze-It"> Cheeze-IT</label>
+		<input name="Snack" id="Cookies" type="checkbox" value="Cookies">
+		<label for="Cookies"> Cookies</label>
+		<br>
+		<input name="Snack" id="GranolaBars" type="checkbox" value="GranolaBars">
+		<label for="GranolaBars"> Granola Bars</label>
+		<input name="Snack" id="oreos" type="checkbox" value="oreos">
+		<label for="oreos"> Oreos</label>
+		<br>
+		</div>
+		<label for="commBox"> Do you have any Food Restrictions</label>
+		<textarea name="custRes" id="commBox"></textarea>
+  </fieldset>
+  <input type="submit" value="Send RSVP">
+  </form>
+  </main>
+    <footer>
+      &copy; 1/28/2021 <a href="mailto:cr19335@georgiasouthern.edu"> cr19335@georgiasouthern.edu</a>
+   </footer>
+   <script>
+   /*
+   */
+     var cam = document.getElementById("orderForm");
+	cam.addEventListener("submit", rsvp);
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+	Author: Cameron Robinson
+	Date:   01/21/2021
+	Assignment 5
+
+	Filename: index.html
+	-->
+	 <meta charset="utf-8" />
+   <title>Robinson :Assignment 5</title>
+   <link href="Robinson_styles.css" rel="stylesheet">
+   <script src="Robinson_script.js"></script>
+</head>
+
+<body>
+  <header >
+      <img src="Robinson_logo.png" alt="photo">
+	  <h1> 03/08/2000</h1>
+  </header>
+ <nav>  
+  <a href="index.html" >Homepage</a>
+  <a href="activities.html" >Activities</a>
+  <a href="wishlist.html" >Wishlist</a>
+  <a href="rsvp.html">RSVP</a>
+  <a href="index.html#FamousBirthdays">Famous Birthdays </a>
+  </nav>
+  <main>
+  <h2> Refreshments & Activities at Pary </h2>
+  <img src="images/bowling.jpg" id="Bowl" alt="Bowl">
+  <h3> Bowling</h3>
+ 
+    <p> We will bowl with family and friends because it is very competitve and fun. Everyone loves to bowl because it can be quite amusing as well.</p> <br class="clearfix">
+   <img src="images/candles.jpg" id="candles" alt="candles">
+  <h3> Candles</h3>
+  
+    <p>I love to keep the house smelling good. The mahogany teakwood is my favorite because it brings out the smell around the house.</p> <br class="clearfix">
+  <img src="images/games.jpg" id="games" alt="games">
+ <h3> Video Games</h3>
+    <p> Kids love technology so why not let them play video games with each other, we can let them have a great time.</p> <br class="clearfix">
+  <img src="images/presents.jpg" id="presents" alt="presents">
+  <h3> Presents</h3>
+ 
+    <p> We will open presents to celebrate my birthday and anything is welcome. I am grateful for it.</p> <br class="clearfix">
+   <img src="images/cake&icecream.jpg" id="Cakeicecream" alt="Cakeicecream">
+  <h3> Cake and Ice cream</h3>
+  
+    <p> The cake will always a hot fudge chocolate cake with some vanilla ice cream to go with it. It is very delicious.</p> <br class="clearfix">
+ <img src="images/pics.jpg" id="Pics" alt="Pics">
+  <h3> Photos</h3>
+
+    <p> Everyone is taking a big picture. Everyone who is invited is going to be in the big photo shoot.</p> <br class="clearfix">
+  </main>
+    <footer>
+      &copy; 1/28/2021 <a href="mailto:cr19335@georgiasouthern.edu"> cr19335@georgiasouthern.edu</a>
+   </footer>
+   <script>
+   var Bowl = document.getElementById("Bowl");
+   var candles = document.getElementById("candles");
+   var games = document.getElementById("games");
+   var presents = document.getElementById("presents");
+   var Cakeicecream = document.getElementById("Cakeicecream");
+   var Pics = document.getElementById("Pics");
+   Bowl.addEventListener("click", function(){ activities(this.id) })
+   candles.addEventListener("click", function(){ activities(this.id) })
+   games.addEventListener("click", function(){ activities(this.id) })
+   presents.addEventListener("click", function(){ activities(this.id) })
+   Cakeicecream.addEventListener("click", function(){ activities(this.id) })
+   Pics.addEventListener("click", function(){ activities(this.id) }) 
+   </script>
+</body>
+
+</html>

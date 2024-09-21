@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/*
+	
+	Author: Cameron Robinson
+	Date:	2/9/2021
+	Assignment 2
+	Filename: Robinson_styles.css
+
+*/
+html{
+	background-color: rgb(136, 191, 161);
+}	
+body{
+	background-color: rgb(190, 197, 173);
+	padding: 5px;
+	font-family: Geneva, Tahoma, sans-serif;
+	border-radius: 30px;
+	width: 80%;
+	margin: auto;
+}
+	
+header{
+	background-color: #12263A ;
+	padding: 5px ;
+	color: white ;
+	text-align: center;
+	border-radius: 30px 30px 0px 0px;
+}
+
+nav{
+	background-color: hsl(25, 41%, 63%);
+	padding: 15px ;
+	color: green;
+	border-bottom: 5px ridge white; 
+}
+	
+main{
+	background-color: #89AAE6 ;
+	padding: 5px;
+	color: #230ba7;
+}
+
+footer{
+	background-color: #548687 ;
+	padding: 5px;
+	color: green;
+	text-align: center; 
+	border-radius: 0px 0px 30px 30px;
+}	
+
+h2{
+font-family: Georgia, serif;
+text-shadow: black 0px 0px 3px;
+color: peachpuff;
+}
+h3{
+font-family: "comic sans ms",  cursive;
+text-shadow: white 0px 0px 3px;
+color: #ac0308;
+}	
+
+a{
+	color: #C5E99B ;
+}
+nav a{
+	background-color: #89AAE6 ;
+	padding: 5px;
+	color: #230ba7;
+	border: 5px double peachpuff;
+} 	
+nav a:hover{
+	background-color: peachpuff;
+	color: #56445D; 
+}	
+ main img{
+	border: 5px solid #28774A;
+	margin: 10px 10px 10px 10px;
+	float: left;
+	border-radius: 10px 10px 10px 10px;
+}	
+table{
+	border: 10px double white;
+	width: 85%;
+	margin: auto;
+	border-collapse: collapse;
+}	
+caption{
+	caption-side: bottom; 
+	text-align: left;
+	font-style: italic;
+	color: gold;
+	padding: 15px;
+	
+}	
+th, td{
+	padding: 10px;
+}	
+tr:nth-of-type(even){
+	color: black;
+	background-color: #A3A684;
+}	
+a{
+	color: #515751;
+}	
+tr:nth-of-type(odd){
+	color: #B5F44A;
+	background-color: #3772FF;
+}	
+tr:first-of-type{
+	color: #06BCC1;
+	background-color: #957964;
+	border-bottom: 10px double yellow;
+}	
+.clearfix{
+	clear:both;
+}	
+form{
+	background-color: grey;
+	margin:auto;
+	padding:10px;
+	width: 80%;
+}	
+
+fieldset{
+	margin: 10px;
+	padding: 10px;
+	background-color: lavender ;
+	text-align: left;
+	border: 5px solid #ce8d38;
+}	
+legend{
+	background-color: blue;
+	color: peachpuff;
+	font-size: 1.2em;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 20px;
+}	
+label{
+	width: 35%;
+	display: inline-block;
+	background-color: lavender;
+	padding: 5px;
+	margin-bottom: 15px;
+}	
+input, select, textarea{
+	width: 40%;
+	box-sizing: border-box;
+}	
+
+#Food input{
+	width: initial;
+	margin-left: 5px;
+}	
+#Snack input{
+	width: initial;
+	margin-left: 5px;
+}	
+input[type="submit"] {
+	background-color: #FFC857;
+	border: 5px solid #177E89 ;
+	color: #DB3A34;
+	font-size: 2em;	
+	padding: 5px;
+	display: block;
+	margin: 15px auto;
+}
